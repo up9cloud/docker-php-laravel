@@ -1,4 +1,5 @@
-# docker-php-laravel
+# docker-php-laravel [![Docker Build Statu](https://img.shields.io/docker/build/sstc/php-laravel.svg)](https://hub.docker.com/r/sstc/php-laravel/)
+
 php dependencies installed for Laravel 5
 
 ## Usage
