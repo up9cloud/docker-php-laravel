@@ -5,13 +5,9 @@ IMAGE=$1
 CMD="docker run --rm -v $__DIR__:/app -w /app $IMAGE"
 
 set -xe; \
-# https://laravel.com/docs/5.8#server-requirements
-$CMD php v.php 7.1.3; \
-$CMD php bcmath.php; \
-$CMD php ctype.php; \
-$CMD php json.php; \
-$CMD php mbstring.php; \
+# https://laravel.com/docs/5.1#installation
+$CMD php v.php 5.5.9; \
 $CMD php openssl.php; \
 $CMD php pdo_mysql.php; \
-$CMD php tokenizer.php; \
-$CMD php xml.php;
+$CMD php mbstring.php; \
+$CMD php tokenizer.php;
