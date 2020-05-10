@@ -1,10 +1,11 @@
-FROM php:7.1-fpm-alpine
+FROM php:7.3-fpm-alpine
 
-# https://laravel.com/docs/5.8/installation
+# https://laravel.com/docs/7.x/installation
 RUN \
 # BCMath PHP Extension
 	docker-php-ext-install bcmath; \
 # Ctype PHP Extension
+# Fileinfo PHP extension
 # JSON PHP Extension
 # Mbstring PHP Extension
 # OpenSSL PHP Extension
@@ -15,14 +16,6 @@ RUN \
 
 # Others
 RUN \
-# mcrypt
-	apk add --no-cache \
-		libmcrypt-dev \
-	; \
-	docker-php-ext-install -j$(getconf _NPROCESSORS_ONLN) mcrypt; \
-	# apk del \
-	# 	libmcrypt-dev \
-	# ; \
 # gd
 # https://github.com/docker-library/php/issues/225#issuecomment-226870896
 	apk add --no-cache \
