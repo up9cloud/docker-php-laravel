@@ -1,4 +1,4 @@
-# docker-php-laravel [![Docker Build Statu](https://img.shields.io/docker/build/sstc/php-laravel.svg)](https://hub.docker.com/r/sstc/php-laravel/)
+# docker-php-laravel [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/sstc/php-laravel)](https://hub.docker.com/r/sstc/php-laravel/)
 
 PHP7 dependencies installed for Laravel
 
