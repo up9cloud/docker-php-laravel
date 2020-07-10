@@ -1,4 +1,4 @@
-FROM php:7.2-apache
+FROM php:7.4.8-apache
 
 # https://laravel.com/docs/6.x/installation
 RUN set -xe; \
