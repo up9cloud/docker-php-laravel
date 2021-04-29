@@ -1,0 +1,139 @@
+version: 2
+registries:
+  docker-registry-registry-hub-docker-com:
+    type: docker-registry
+    url: https://registry.hub.docker.com
+    username: sstc
+    password: "${{secrets.DOCKER_REGISTRY_REGISTRY_HUB_DOCKER_COM_PASSWORD}}"
+
+updates:
+- package-ecosystem: docker
+  directory: "/7.0-apache"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.1-apache"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.0-fpm-alpine"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.fpm.pre.alpine
+    - 8.0.2.pre.fpm.pre.alpine
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.1-fpm-alpine"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.fpm.pre.alpine
+    - 8.0.2.pre.fpm.pre.alpine
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.2-apache"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.2-fpm-alpine"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.fpm.pre.alpine
+    - 8.0.2.pre.fpm.pre.alpine
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.3-apache"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.3-fpm-alpine"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.fpm.pre.alpine
+    - 8.0.2.pre.fpm.pre.alpine
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.4-apache"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.apache
+    - 8.0.2.pre.apache
+  registries:
+  - docker-registry-registry-hub-docker-com
+- package-ecosystem: docker
+  directory: "/7.4-fpm-alpine"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: php
+    versions:
+    - 8.0.1.pre.fpm.pre.alpine
+    - 8.0.2.pre.fpm.pre.alpine
+  registries:
+  - docker-registry-registry-hub-docker-com
